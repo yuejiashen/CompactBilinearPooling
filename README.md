@@ -52,7 +52,7 @@ output = net:forward(input)
 print(output:size())
 
    10
- 2048
+ 1024
 [torch.LongStorage of size 2]
 ```
 ## References

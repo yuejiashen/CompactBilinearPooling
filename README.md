@@ -44,7 +44,7 @@ print(output:size())
 ```
 require 'cutorch'
 require 'tcbp'
-net = nn.ComBiPooling(1024):cuda()  -- by default, sum pool is set to true, spatial resolution will be sum
+net = nn.ComBiPooling(1024):cuda()  -- by default, sum pool is set to true, spatial resolution will be sumed
 input1 = torch.rand(10, 300, 7, 7):cuda()  -- batch size = 10, input dim = 300, height = 7, width = 7
 input2 = torch.rand(10, 300, 7, 7):cuda()
 input = {input1, input2}

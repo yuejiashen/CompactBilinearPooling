@@ -12,7 +12,7 @@ The compact bilinear pooling layer is proposed by Yang Gao etc. in the paper [Co
 
 ```
 git clone https://github.com/yuejiashen/CompactBilinearPooling
-cd cbp
+cd CompactBilinearPooling
 luarocks make rocks/tcbp-1.0-2.rockspec
 ```
 

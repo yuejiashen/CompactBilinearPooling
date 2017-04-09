@@ -2,8 +2,8 @@
 
 This code is revised from [@guopei's](https://github.com/guopei) [Compact Bilinear Pooling for Torch](https://github.com/guopei/CompactBiPooling). The main changes include:
 
-1. In the old version, the ouputs, i.e. bilinear features is spatially sum pooled. Now, you can set the sum_pool = false if you need some spatial resolution in the output, such as keypoint detection.
-2. the new version of package **tcbp** is **1.0-2**(Torch Compact Bilinear Pooling version 2) to avoid confusion.
+1. In the old version, the ouputs, i.e. bilinear features is spatially sum pooled. Now, you can set the **sum_pool = false** if you need some spatial resolution in the output, such as keypoint detection.
+2. the new version of package **tcbp** is **1.0-2**(Torch Compact Bilinear Pooling ) to avoid confusion.
 3. new tests.
 
 The compact bilinear pooling layer is proposed by Yang Gao etc. in the paper [Compact Bilinear Pooling](https://arxiv.org/abs/1511.06062). This method reduces the spatial complexity of [Bilinear Pooling](http://vis-www.cs.umass.edu/bcnn/docs/bcnn_iccv15.pdf) so that it's feasible for real world training and provides a possible direction to interpret the huge success in fine grained recognition using Bilibear Pooling. We refer you to [caffe implementation page](https://github.com/gy20073/compact_bilinear_pooling) for further information.
@@ -23,7 +23,7 @@ th test.lua
 Read test.lua for usage.
 
 ## Usage
-Example1
+**Example1**
 ```
 require 'cutorch'
 require 'tcbp'
@@ -40,7 +40,7 @@ print(output:size())
     7
 [torch.LongStorage of size 4]
 ```
-Example2
+**Example2**
 ```
 require 'cutorch'
 require 'tcbp'

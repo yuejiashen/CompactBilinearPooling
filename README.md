@@ -23,7 +23,7 @@ th test.lua
 Read test.lua for usage.
 
 ## Usage
-###Example1
+Example1
 ```
 require 'cutorch'
 require 'tcbp'
@@ -40,7 +40,7 @@ print(output:size())
     7
 [torch.LongStorage of size 4]
 ```
-###Example2
+Example2
 ```
 require 'cutorch'
 require 'tcbp'
